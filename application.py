@@ -8,8 +8,8 @@ from qrcode.image.styles.colormasks import SquareGradiantColorMask
 import base64
 from io import BytesIO
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+application =app
 def return_image(image):
     data = BytesIO()
     image.save(data, "PNG")
