@@ -9,7 +9,7 @@ import base64
 from io import BytesIO
 
 application = Flask(__name__)
-application =app
+app = application
 def return_image(image):
     data = BytesIO()
     image.save(data, "PNG")
