@@ -1,0 +1,13 @@
+body {
+    background-color: wheat;
+  }
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+    margin: 0 auto;
+}
