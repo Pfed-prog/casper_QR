@@ -8,14 +8,10 @@ img {
 }
 
 h1 {
-    height: 400px;
-    width: 800px;
-    line-height: 400px;
     text-align: center;
 }
 
-form {
+div {
     margin: 0 auto; 
-    width:250px;
     text-align: center;
 }
