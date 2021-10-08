@@ -18,9 +18,13 @@
             <input type="number" name="amount" placeholder="amount" />
             <input type="text" name="message"  placeholder="message" />
             <input type="number" name="r" placeholder="transactionID" />
-            <label for="subscribeNews">Cspr.live</label>
+            <label for="dropdown">Choose Network:</label>
             
-            <input type="checkbox" name="box" checked/>
+            <select name="networks">
+                <option value="casper">casper</option>
+                <option value="https://casper.live/transfer">casper.live</option>
+                <option value="https://testnet.casper.live/transfer">testnet.casper.live</option>
+            </select>
             
             <button type="submit" class="btn">Display QR-code</button>
             

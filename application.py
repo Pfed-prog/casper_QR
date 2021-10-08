@@ -26,7 +26,7 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
     if network =='casper':
         url = f"{network}:{address}?amount={amount}&message={message}&transfer_id={transaction}"
     else:
-        url = f"{network}?recipient={address}&amount={amount}&message={message}&transfer_id={transaction}"
+        url = f"{network}?recipient={address}&amount={amount}&transfer_id={transaction}"
     # addingg URL or text to QRcode
     QRcode.add_data(url)
 
@@ -63,10 +63,9 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
 def home():
     if request.method == "POST":
         data = [x for x in request.form.values()]
-        network = 'casper'
-        if len(data)==5:
-            network='https://cspr.live/transfer'
-        image = generate_image(data[0],data[1],data[2],data[3],network)
+        print(data)
+        image = generate_image(data[0],data[1],data[2],data[3],data[4])
+
     else: 
         image = generate_image()
     image.save('./static/output.png')
