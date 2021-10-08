@@ -7,7 +7,15 @@ img {
     margin: 0 auto;
 }
 
-div {
-    display: block;
-    margin: 0 auto;
+h1 {
+    height: 400px;
+    width: 800px;
+    line-height: 400px;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto; 
+    width:250px;
+    text-align: center;
 }
