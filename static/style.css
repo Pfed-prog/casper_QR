@@ -8,10 +8,24 @@ img {
 }
 
 h1 {
+    font-size: 46px;
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
 }
 
 div {
-    margin: 0 auto; 
+    margin: 10 auto; 
     text-align: center;
+}
+
+select, input {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.btn {
+    padding: 30px;
+    margin: 10px;
 }

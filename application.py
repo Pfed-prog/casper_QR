@@ -1,15 +1,18 @@
+import base64
 from flask import Flask, render_template, request, send_from_directory
 from PIL import Image
+from io import BytesIO
 
 import qrcode
 from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.moduledrawers import RoundedModuleDrawer
 from qrcode.image.styles.colormasks import SquareGradiantColorMask
-import base64
-from io import BytesIO
+
 
 application = Flask(__name__)
 app = application
+
+
 def return_image(image):
     data = BytesIO()
     image.save(data, "PNG")
@@ -48,13 +51,13 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
         back_color="white",\
         image_factory=StyledPilImage,\
         module_drawer=RoundedModuleDrawer(),\
-        #color_mask=SquareGradiantColorMask()\
-        ).convert('RGB')
+        color_mask=SquareGradiantColorMask()\
+    ).convert('RGB')
 
     # position the logo
     pos = ((QRimg.size[0] - logo.size[0]) // 2,
             (QRimg.size[1] - logo.size[1]) // 2)
-    QRimg.paste(logo,pos,)# put QRimg.paste(logo,pos,log) to make the logo transparent
+    QRimg.paste(logo,pos)# put QRimg.paste(logo,pos,log) to make the logo fully transparent
 
     # set size of QR code
     return QRimg.resize((400, 400), Image.ANTIALIAS)
@@ -63,7 +66,6 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
 def home():
     if request.method == "POST":
         data = [x for x in request.form.values()]
-        print(data)
         image = generate_image(data[0],data[1],data[2],data[3],data[4])
 
     else: 
@@ -77,4 +79,4 @@ def send():
     return send_from_directory(directory='./static/',path='output.png',as_attachment=True)
 
 if __name__ == "__main__":
-  app.run()
+    app.run()
