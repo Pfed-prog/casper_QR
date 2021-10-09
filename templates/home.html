@@ -29,7 +29,7 @@
             <button type="submit" class="btn">Display QR-code</button>
             
         </form>
-        {%if address!=''%}
+        {%if mth=='POST' %}
         <form action="{{ url_for('send')}}" method="get">
             <button type="submit" class="btn">Download QR-code</button>
         </form>

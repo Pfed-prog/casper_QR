@@ -73,7 +73,7 @@ def home():
 
     image.save('./static/output.png')
     img_data = return_image(image)
-    return render_template("home.html", img_data = img_data.decode('utf-8'), address=data[0])
+    return render_template("home.html", img_data = img_data.decode('utf-8'), mth=request.method)
 
 @app.route("/img", methods=["GET"])
 def send():
