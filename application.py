@@ -66,10 +66,11 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
 def home():
     if request.method == "POST":
         data = [x for x in request.form.values()]
-        image = generate_image(data[0],data[1],data[2],data[3],data[4])
+        image = generate_image(data[0], data[1], data[2], data[3], data[4])
 
     else: 
         image = generate_image()
+
     image.save('./static/output.png')
     img_data = return_image(image)
     return render_template("home.html", img_data = img_data.decode('utf-8') )
