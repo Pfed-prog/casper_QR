@@ -1,4 +1,4 @@
-# casper_QR
+# Casper_QR
 
 The repository generates QR codes for transactions on Casper local nodes, casper.live and testnet.casper.live.
 
@@ -10,3 +10,6 @@ The app is hosted on AWS and can be accessed via http://sample-env.eba-wb9b6xgh.
 
 `pip install -r requirements.txt`
 
+`python3 application.py`
+
+Go to http://127.0.0.1:5000/
