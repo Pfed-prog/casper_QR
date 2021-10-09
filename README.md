@@ -8,7 +8,7 @@ The app is hosted on AWS and can be accessed via http://sample-env.eba-wb9b6xgh.
 
 For testing on the desktop computer online qr code reader can be used https://4qrcode.com/scan-qr-code.php
 
-For obtaining testnet funds via faucet got to https://testnet.cspr.live/tools/faucet
+For obtaining testnet funds via [faucet](https://testnet.cspr.live/tools/faucet)
 
 ## Local Installation
 
