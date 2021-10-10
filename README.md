@@ -4,11 +4,11 @@ The repository generates QR codes for transactions on Casper local nodes, [caspe
 
 The app is hosted on AWS and can be accessed via http://sample-env.eba-wb9b6xgh.us-east-2.elasticbeanstalk.com/
 
-![](https://i.imgur.com/875Jvcs.jpg)
+![](https://i.imgur.com/KYyfJIl.jpg?1)
 
 For testing on the desktop computer online qr code reader can be used https://4qrcode.com/scan-qr-code.php
 
-For obtaining testnet funds via [faucet](https://testnet.cspr.live/tools/faucet)
+For obtaining testnet funds use [faucet](https://testnet.cspr.live/tools/faucet)
 
 ## Local Installation
 
