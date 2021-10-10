@@ -37,7 +37,7 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
     QRcode.make(fit=True)
 
     # get the logo and resize it
-    Logo_link = './static/casper.png'
+    Logo_link = './static/logo.png'
     # taking base width
     basewidth = 100
     logo = Image.open(Logo_link)
@@ -51,7 +51,7 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
         back_color="white",\
         image_factory=StyledPilImage,\
         module_drawer=RoundedModuleDrawer(),\
-        color_mask=SquareGradiantColorMask()\
+        #color_mask=SquareGradiantColorMask()\
     ).convert('RGB')
 
     # position the logo
@@ -80,4 +80,4 @@ def send():
     return send_from_directory(directory='./static/',path='output.png',as_attachment=True)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
