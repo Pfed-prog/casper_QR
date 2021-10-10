@@ -37,7 +37,7 @@ def generate_image(address:str='', amount=0, message:str='', transaction:str='',
     QRcode.make(fit=True)
 
     # get the logo and resize it
-    Logo_link = './static/logo.png'
+    Logo_link = './static/logo3.png'
     # taking base width
     basewidth = 100
     logo = Image.open(Logo_link)
