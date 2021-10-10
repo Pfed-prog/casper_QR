@@ -22,13 +22,14 @@ div {
 }
 
 select, input {
-    padding: 14px;
+    padding: 14px 0px;
     border: none;
     border-radius: 4px;
-    background-color: #f1f1f1;
+    background: #f1f1f1;
     margin: 12px;
     position: relative;
     text-align: center;
+    font-weight: bold;
 }
 
 .btn {
@@ -36,6 +37,6 @@ select, input {
     margin: 10px;
     border-radius: 24px;
     padding: 10px 30px;
-    background-color: #f1f1f1;
+    background: #f1f1f1;
     text-align: center;
 }
