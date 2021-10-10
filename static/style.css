@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(53, 51, 47);
-  }
+    background-color: rgb(31, 30, 28);
+}
 
 img {
     display: block;
@@ -12,7 +12,7 @@ h1 {
     font-size: 46px;
     text-align: center;
     font-family: Roboto, Helvetica, bold;
-    color: white;
+    color: #f1f1f1;
 }
 
 div {
@@ -34,4 +34,6 @@ select, input {
     margin: 10px;
     border-radius: 24px;
     padding: 10px 30px;
+    background-color: #f1f1f1;
+    
 }
