@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(114, 102, 80);
+    background-color: rgb(53, 51, 47);
   }
 
 img {
@@ -25,7 +25,8 @@ select, input {
     border: none;
     border-radius: 4px;
     background-color: #f1f1f1;
-    margin-bottom:5px;
+    margin-bottom: 15px;
+    margin: 10px;
 }
 
 .btn {
