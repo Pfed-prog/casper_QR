@@ -1,16 +1,18 @@
 body {
-    background-color: wheat;
+    background-color: rgb(114, 102, 80);
   }
 
 img {
     display: block;
     margin: 0 auto;
+    border-radius: 12px;
 }
 
 h1 {
     font-size: 46px;
     text-align: center;
     font-family: Roboto, Helvetica, bold;
+    color: white;
 }
 
 div {
@@ -23,9 +25,12 @@ select, input {
     border: none;
     border-radius: 4px;
     background-color: #f1f1f1;
+    margin-bottom:5px;
 }
 
 .btn {
     padding: 30px;
     margin: 10px;
+    border-radius: 24px;
+    padding: 10px 30px;
 }
