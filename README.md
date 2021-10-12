@@ -1,6 +1,6 @@
 # Casper_QR
 
-The repository generates QR codes for transactions on Casper local nodes, [casper.live](https://cspr.live) and [testnet.casper.live](https://testnet.cspr.live) which first the app displays after accoutning for the user inputs. After displaying the QR Code the user can use the button to download the image for transactions on Testnet.
+The repository generates QR codes for transactions on Casper local nodes, [casper.live](https://cspr.live) and [testnet.casper.live](https://testnet.cspr.live) accounting for the user's inputs. After displaying the QR Code the user can use the button to download the image for transactions.
 
 The app is hosted on AWS and can be accessed via http://sample-env.eba-wb9b6xgh.us-east-2.elasticbeanstalk.com/
 
